@@ -146,4 +146,65 @@ int main(){
     // int test=0;
     // float f=3.111;
     // cout<<(test>0?f:0)<<endl;
+
+    // int weekday=1;
+    // switch (weekday){
+    //     case 1:
+    //         cout<<"Monday";
+    //         break;
+    //     case 2:
+    //         cout<<"Tuesday";
+    //         break;
+    //     case 3:
+    //         cout<<"Wednesday";
+    //         break;
+    //     case 4:
+    //         cout<<"Thursday";
+    //         break;
+    //     case 5:
+    //         cout<<"Friday";
+    //         break;
+    //     case 6:
+    //         cout<<"Saturday";
+    //         break;
+    //     case 7:
+    //         cout<<"Sunday";
+    //         break;
+    //     default:
+    //         cout<<"invalid input";
+    // }
+
+    //input month number print total days of month.condition in a switch
+    // 31days-1 3 5 7 8 10 12
+    //30 days- 4 6 9 11
+    //28-2
+    // int month=1;
+    // switch((month<=7 && (month%2!=0))|| (month>=8 && (month%2==0))){
+    //     case 1:
+    //     cout<<"31 days";
+    //     break;
+    // }
+    // switch(month==4 || month==6 || month==9 || month==11){
+    //     case 1:
+    //     cout<<"30days";
+    // }
+    // switch(month){
+    //     case 2:
+    //     cout<<"28 days";
+    // }
+
+    //design a calculator
+    // int a,b;
+    // char op;
+    // cin>>a>>op>>b;
+    // if(op=='+'){
+    //     cout<<a+b;
+    // }else if(op=='-'){
+    //     cout<<a-b;
+    // }else if(op=='*'){
+    //     cout<<a*b;
+    // }else if(op=='/'){
+    //     cout<<a/b;
+    // }
+    
 }
