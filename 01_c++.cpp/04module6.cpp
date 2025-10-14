@@ -188,14 +188,14 @@ int main(){
     //     }cout<<endl;
     // }
 
-    for(int i=1;i<=n;i++){
+    // for(int i=1;i<=n;i++){
         
-        for(int j=1;j<=n;j++){
-            if((i+j)>=(n+1)){
-                cout<<'*';
-            }else{cout<<" ";}
-        }cout<<endl;
-    }
+    //     for(int j=1;j<=n;j++){
+    //         if((i+j)>=(n+1)){
+    //             cout<<'*';
+    //         }else{cout<<" ";}
+    //     }cout<<endl;
+    // }
     
     // for(int i=1;i<=n;i++){
     //     for(int j=1;j<=n-i;j++){
@@ -206,4 +206,145 @@ int main(){
             
     //     }cout<<endl;
     // }
+
+//    ****
+//   ****
+//  ****
+// ****
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n-i;j++){
+    //         cout<<' ';
+    //     }for(int k=1;k<=n;k++){
+    //         cout<<'*';
+    //     }cout<<endl;
+    // }
+
+//    *
+//   ***
+//  *****
+// *******
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n-i;j++){
+    //         cout<<" ";
+    //     }for(int k=1;k<=2*i-1;k++){
+    //         cout<<'*';
+    //     }cout<<endl;
+    // }
+
+    //method 2-no of stars in each line and no of spaces in each line
+    // int no_of_stars=1;
+    // int no_of_spaces=n-1;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=no_of_spaces;j++){
+    //         cout<<" ";
+    //     }no_of_spaces--;
+    //     for(int k=1;k<=no_of_stars;k++){
+    //     cout<<"*";
+    // }no_of_stars+=2;cout<<endl;
+    // }
+
+//    1
+//   121
+//  12321
+// 1234321
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n-i;j++){
+    //         cout<<" ";
+    //     }for(int k=1;k<=(2*i)/2;k++){
+    //         cout<<k;
+    //     }for(int l=i-1;l>=1;l--){
+    //         cout<<l;
+    //     }cout<<endl;
+    // }
+
+    // for(int i=1;i<=2*n-1;i++){//incomplete code
+    //     if(i<=n){
+    //     for(int j=1;j<=n-i;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k=1;k<=2*i-1;k++){
+    //         cout<<'*';
+    //     }cout<<endl;}else{
+    //         for(int j=1;j<=i-n;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k=(2*i)-1-2;k<=1;k--){
+    //         cout<<'*';
+    //     }cout<<endl;
+    //     }
+            
+    // }
+
+
+//    *
+//   ***
+//  *****
+// *******
+//  *****
+//   ***
+//    *
+    // int nst=1;
+    // int nsp=n-1;
+    // for(int i=1;i<=2*n-1;i++){
+        
+    //     for(int j=1;j<=nsp;j++){
+    //         cout<<' ';
+    //     }if(i<=n-1){
+    //         nsp--;
+    //     }else{nsp++;}
+    //     for(int k=1;k<=nst;k++){
+    //         cout<<"*";
+    //     }if(i<=n-1){nst+=2;}
+    //     else{nst-=2;}cout<<endl;
+    // }
+
+
+// *******
+// *** ***
+// **   **
+// *     *
+    // for(int i=1;i<=2*n-1;i++){
+    //     cout<<'*';
+    // }cout<<endl;
+    // int m=n-1;
+    // for(int i=1;i<=m;i++){
+    //     for(int j=1;j<=m+1-i;j++){
+    //         cout<<'*';
+    //     }for(int k=1;k<=2*i-1;k++){
+    //         cout<<' ';
+    //     }for(int j=1;j<=m+1-i;j++){
+    //         cout<<'*';
+    //     }
+    //     cout<<endl;
+    // }
+
+// 1234567
+// 123 567
+// 12   67
+// 1     7
+    // for(int i=1;i<=2*n-1;i++){
+    //     cout<<i;
+    // }cout<<endl;int m=n-1;
+    // for(int i=1;i<=m;i++){
+    //     int a=1;
+    //     for(int j=1;j<=m+1-i;j++){
+    //         cout<<a;
+    //         a++;
+    //     }for(int k=1;k<=2*i-1;k++){
+    //         cout<<' ';
+    //         a++;
+    //     }for(int l=1;l<=m+1-i;l++){
+    //         cout<<a;
+    //         a++;
+    //     }cout<<endl;
+    // }
+
+
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+        //    if(i<=j) cout<<i;
+        //    else cout<<j; or
+        cout<<min(i,j);
+        }cout<<endl;
+    }
 }
