@@ -5,17 +5,21 @@ void display(vector<int>&a){
         cout<<a[i]<<" ";
     }cout<<endl;
 }
-void sortArrayof0s1s(vector<int>&v){
+void sortArraythrough2pass(vector<int>&v){
     int no0=0;
     int no1=0;
     for(int i=0;i<v.size();i++){
         if(v[i]==0)no0++;
         else no1++;
     }
-    for(int i=0;i<no0;i++){
-        v[i]=0;
-    }for(int i=no0;i<v.size();i++){
-        v[i]=1;
+    // for(int i=0;i<no0;i++){
+    //     v[i]=0;
+    // }for(int i=no0;i<v.size();i++){
+    //     v[i]=1;
+    // }
+    for(int i=0;i<v.size();i++){
+        if(i<no0)v[i]=0;
+        else v[i]=1;
     }
 }
 int main(){
@@ -27,7 +31,7 @@ int main(){
     v1.push_back(0);
     v1.push_back(0);
     display(v1);
-    sortArrayof0s1s(v1);
+    sortArraythrough2pass(v1);
     display(v1);
     
 }
