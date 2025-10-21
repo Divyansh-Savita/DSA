@@ -22,6 +22,23 @@ void sortArraythrough2pass(vector<int>&v){
         else v[i]=1;
     }
 }
+void sortArraythrough1pass(vector<int>&v){
+    int left=0,right=v.size()-1;
+    while(left<right){
+        if(v[left]==0){left++;}
+        if(v[right]==1){right--;}
+        if(v[right]!=1){
+            v[right]=1;
+            right--;
+        }
+        if(v[left]!=0 ){
+            v[left]=0;
+            left++;
+            
+        }
+        
+    }
+}
 int main(){
     vector<int> v1;
     v1.push_back(0);
@@ -31,7 +48,8 @@ int main(){
     v1.push_back(0);
     v1.push_back(0);
     display(v1);
-    sortArraythrough2pass(v1);
+    // sortArraythrough2pass(v1);
+    sortArraythrough1pass(v1);
     display(v1);
     
 }
