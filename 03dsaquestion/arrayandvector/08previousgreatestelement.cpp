@@ -11,7 +11,7 @@ vector<int> previousgreatestelement(vector<int>&v1){
     
     for(int i=0;i<v1.size();i++){
         int max=INT_MIN;
-        if(i==0){v2.push_back(-1);continue;}
+        
         for(int j=i-1;j>=0;j--){
             if(v1[j]>max){max=v1[j];}
             
