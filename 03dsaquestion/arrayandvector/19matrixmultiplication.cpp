@@ -30,13 +30,12 @@ int main(){
             for(int k=0;k<n;k++){
             resultant[i][j]+=a[i][k]*b[k][j];}
         }
-    }
+    }cout<<endl;
     for(int i=0;i<m;i++){
-        
         for(int j=0;j<q;j++){
-            cout<<resultant[i][j];
+            cout<<resultant[i][j]<<" ";
         }
-    }
+    }cout<<endl;
 }else{
     cout<<"mutiplication not happened";
 }return 0;
