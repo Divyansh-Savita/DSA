@@ -76,7 +76,7 @@ int main(){
     // cout<<sum;
 
     //addition in matrices
-    int arr[3][3]={1,2,3,4,5,6,7,8,9};
+    int arr[4][4]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
     // int brr[3][3]={1,2,3,4,5,6,7,8,9};
     // int crr[3][3];
     // for(int i=0;i<3;i++){
@@ -104,18 +104,35 @@ int main(){
     // }
 
     //transpose of a matrix
-    int brr[3][3];
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            brr[i][j]=arr[j][i];
-            cout<<arr[j][i]<<" ";
-        }cout<<endl;
-    }
+    // int brr[3][3];
+    // for(int i=0;i<3;i++){
+    //     for(int j=0;j<3;j++){
+    //         brr[i][j]=arr[j][i];
+    //         cout<<arr[j][i]<<" ";
+    //     }cout<<endl;
+    // }
     
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
+    // for(int i=0;i<3;i++){
+    //     for(int j=0;j<3;j++){
             
-            cout<<brr[i][j]<<" ";
+    //         cout<<brr[i][j]<<" ";
+    //     }cout<<endl;
+    // }
+    
+    //transpose
+    for(int i=0;i<4;i++){
+        for(int j=0;j<4;j++){
+            if(j>i){
+                int temp=arr[i][j];
+                arr[i][j]=arr[j][i];
+                arr[j][i]=temp;
+            }
+        }
+    }
+    for(int i=0;i<=3;i++){
+        for(int j=0;j<=3;j++){
+            
+            cout<<arr[i][j]<<" ";
         }cout<<endl;
     }
 }
