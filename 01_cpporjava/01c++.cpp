@@ -78,7 +78,11 @@ int main(){
     // int c=a+b;
     // cout<<c;
 
-    int radius=8;
-    float circumference=2*3.14*radius;
-    cout<<circumference;
+    int a=2,b=3,c;
+    c=a/b*b;
+    cout<<c;
+
+    // int radius=8;
+    // float circumference=2*3.14*radius;
+    // cout<<circumference;
 }
