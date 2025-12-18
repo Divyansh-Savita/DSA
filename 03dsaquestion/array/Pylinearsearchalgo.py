@@ -5,6 +5,15 @@ def find_query(card,query):
             return position
         position+=1
     return -1
-card=[50,47,36,23,12,9,7,5,3,2,1,0]
-query=0
+card=[5,4,-3]
+query=-3
 print(find_query(card,query))
+
+#edge case-->
+#at position 0
+#at end of list
+#query not found
+#list is empty
+#list can be of diffferent data types
+#in the mid
+#values can be negative
