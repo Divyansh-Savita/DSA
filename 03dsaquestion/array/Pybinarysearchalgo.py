@@ -1,19 +1,21 @@
 def binary_search(cards,query):
-    lo,hi=0,len(cards)-1
-    mid=(lo+hi)//2
-    mid_num=cards[mid]
+    lo=0
+    hi=len(cards)-1
+    
     while lo<=hi:
-        if mid_num==query:
+        mid=(lo+hi)//2
+        if cards[mid]==query:
             return mid
-        elif mid_num>query:
-            lo==mid+1
-        elif mid_num<query:
-            high=mid-1
+        elif cards[mid]>query:
+            lo=mid+1
+        elif cards[mid]<query:
+            hi=mid-1
     return -1
 
 cards=[10,9,8,7,6,4,3]
-query=8
-binary_search(cards,query)
+query=10
+res=binary_search(cards,query)
+print(res)
 
 #edge case-->
 #at position 0
